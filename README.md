@@ -1,6 +1,7 @@
 <!-- <center><h1><b>落花残雪的项目介绍</b></h1></center> -->
 
 #server端
+1
 >目录 server
 
 **mysql数据库连接** <font color ="red"><b>目录:</b>  [./server/mysqlConnect/mysqlConnect.js](./server/mysqlConnect/mysqlConnect.js)</font>
