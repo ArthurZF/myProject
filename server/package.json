@@ -1,0 +1,19 @@
+{
+    "name": "planningProject",
+    "version": "1.0.0",
+    "description": "",
+    "author": "liang",
+    "license": "ISC",
+    "scripts": {
+        "dev": "supervisor entrance.js",
+        "start": "forever restart entrance.js "
+    },
+    "dependencies": {
+        "koa": "^2.5.3",
+        "koa-bodyparser": "^3.2.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "mysql": "^2.17.1",
+        "oracledb": "^3.1.2"
+    }
+}
