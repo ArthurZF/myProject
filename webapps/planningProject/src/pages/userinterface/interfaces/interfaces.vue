@@ -3,7 +3,7 @@
     <el-menu :default-active="$route.path" mode="horizontal" background-color="#545c64" @select="handleSelect" router
       active-text-color="#ffd04b">
       <el-menu-item index="/mydata">我的日历</el-menu-item>
-      <el-menu-item index="/addthing">添加事件</el-menu-item>
+      <el-menu-item index="/addthing/periodic">添加事件</el-menu-item>
       <div class="admin-hello flex flex-align-center float-right">
         <p class="pointer" @click="goAdmin" v-show="isManage">进入管理界面</p>
         <p class="pointer" @click="goIndex">退出</p>

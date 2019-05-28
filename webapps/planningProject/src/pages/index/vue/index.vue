@@ -140,6 +140,7 @@
           } else {
             localStorage.removeItem("passWord")
           }
+          document.cookie="accountId="
           document.cookie="accountId="+res.resData.accountId
           setTimeout(() => {
             window.location.replace("./userinterface.html")

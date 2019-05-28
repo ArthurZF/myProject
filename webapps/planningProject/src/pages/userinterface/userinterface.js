@@ -40,5 +40,8 @@ new Vue({
   components: {
     interfaces
   },
+  data:{
+    eventHub:new Vue()
+  },
   template: '<interfaces/>'
 })
