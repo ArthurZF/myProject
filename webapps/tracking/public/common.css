@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    min-width: 1366px;
+    min-height: 625px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+img {
+    display: block;
+}
+
+i {
+    font-style: normal
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-just-center {
+    justify-content: center;
+}
+
+.flex-just-between {
+    justify-content: space-between;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.pointer {
+    cursor: pointer;
+}

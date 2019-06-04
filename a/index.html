@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .anti-fraud-box {
+            width: 170px;
+            height: 264px;
+            border: 1px solid #16509a;
+            position: fixed;
+            right: 20px;
+        }
+
+        .close-box {
+            width: 100%;
+            height: 20px;
+            background-color: #5e88be;
+            text-align: right;
+        }
+
+        .close-button {
+            height: 100%;
+            width: 20px;
+            margin-left: auto;
+            background-color: #285ea4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .close-button img {
+            display: block;
+        }
+
+        .anti-fraud-img {
+            height: 70px;
+            width: 100%;
+        }
+
+        .anti-fraud-text {
+            width: 100%;
+            height: calc(100% - 90px);
+            font-size: 14px;
+            color: #16509a;
+            background-color: #e4f0ff;
+            padding: 20px 5px 0 25px;
+            box-sizing: border-box;
+            line-height: 18px;
+        }
+
+        .anti-fraud-text i {
+            font-size: 16px;
+            color: #ff7145;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="anti-fraud-box" id="antiFraud">
+        <div class="close-box">
+            <div class="close-button" id="closeButton">
+                <img src="./exit.svg">
+            </div>
+        </div>
+        <div class="anti-fraud-text">
+            亲爱的市民朋友，<br>上海警方反诈劝阻<br>电话<i>962110</i><br>系专门针对避免您<br>财产被骗受损而设，<br>请您一旦收到来电，<br>立即接听。
+        </div>
+        <img src="./962110.png" alt="" class="anti-fraud-img">
+    </div>
+    <script>
+        document.getElementById("closeButton").onclick = function () {
+            document.getElementById("antiFraud").style.display = "none"
+        }
+        _setPosition()
+        window.onresize = function () {
+            _setPosition()
+        }
+        function _setPosition() {
+            if (document.documentElement.clientWidth>=1400) {
+                document.getElementById("antiFraud").style.left=document.documentElement.clientWidth+20+"px"
+            }else{
+                document.getElementById("antiFraud").style=""
+            }
+         }
+         
+    </script>
+</body>
+
+</html>
